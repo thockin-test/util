@@ -1,8 +1,12 @@
 package foobar
 
-import "github.com/thockin-test/util/bar"
-import "github.com/thockin-test/util/foo"
+import (
+	"strings"
+
+	"github.com/thockin-test/util/bar"
+	"github.com/thockin-test/util/foo"
+)
 
 func FooBar() string {
-	return foo.Foo() + bar.Bar()
+	return strings.ToUpper(foo.Foo() + bar.Bar())
 }
