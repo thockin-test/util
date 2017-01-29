@@ -8,5 +8,5 @@ import (
 )
 
 func FooBar() string {
-	return strings.ToUpper(foo.Foo() + bar.Bar())
+	return strings.ToUpper(foo.Foo() + "-" + bar.Bar())
 }
